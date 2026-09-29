@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "cipher-tool"
+version = "0.1.0"
+description = "Bounded, heuristic cryptanalysis learning tool"
+requires-python = ">=3.10"
+[project.scripts]
+cipher-tool = "cipher_tool.cli:main"
+[tool.setuptools]
+package-dir = {"" = "src"}
+[tool.setuptools.packages.find]
+where = ["src"]
